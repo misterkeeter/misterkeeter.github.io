@@ -113,6 +113,15 @@ nav a:hover{
 	vertical-align: middle;
 }
 
+#work .textArea{
+	width: 38%;
+	font-size: 2em;
+}
+
+#work .textArea p{
+	font-size: 16px;
+}
+
 p{
 	font-size: 13px;
 	padding: 1em;
@@ -130,8 +139,14 @@ p{
 	text-align: left;
 }
 
-#art, #recent, #games, #work{
+#art, #recent, #games,{
 	text-align: center;
+}
+
+.container{
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 h1{
