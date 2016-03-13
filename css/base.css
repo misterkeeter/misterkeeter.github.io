@@ -1,4 +1,179 @@
-body{
-	text-align: center;
-	padding: 3em;
+*{
+	padding: 0;
+	margin: 0;
+	border:none;
+	font-weight: normal;
+	line-height: auto;
+	font-family: 'Open Sans' , Arial, sans-serif;
 }
+.dev{
+	border: solid 1px black;
+}
+
+body{
+	padding: 1em;
+}
+.wrapper{
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+header{
+
+}
+
+.col, .col3{
+	padding: 2% 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.col img, .col3 img{
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+.col{ width: 22%; }
+.col3{width: 30%}
+
+#logo{
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#logo img{
+	width: 100%;
+}
+
+nav{
+	width: 69%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+
+nav a{
+	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: solid 5px white;
+	text-decoration: none;
+	padding:1em;
+	color:#404040;
+}
+
+.social{
+    text-align: right;
+    margin-bottom: -60px;
+    margin-right: 1em;
+}
+
+.social a{
+	width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+}
+
+#tweet{	background-image: url(../img/tweet-n.png);}
+#tweet:hover{ background-image: url(../img/tweet-h.png);}
+
+#mail{	background-image: url(../img/mail-n.png);}
+#mail:hover{ background-image: url(../img/mail-h.png);}
+
+nav a:hover{
+	background-color: #7aac47;
+	border-bottom: solid 5px #7aac47;
+	color:white;
+}
+
+#current{
+	border-bottom: solid 5px #7aac47;
+}
+
+.content{
+	color: #444444;
+}
+
+.content *{
+	/* display: inline-block; */
+}
+
+#about img{
+	    /*float: left;*/
+	    display: inline-block;
+	    width: 50%;
+	    vertical-align: middle;
+}
+
+.textArea{
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+p{
+	font-size: 13px;
+	padding: 1em;
+	font-style: italic;
+	line-height: 1.75em;
+	vertical-align: middle;
+	margin: 0 2em 0 0 ;
+	color: #3e6324;
+	text-align: left;
+}
+
+#music{
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#art, #recent, #games, #work{
+	text-align: center;
+}
+
+h1{
+	padding: 0.25em;
+	margin: 0; 
+	text-align: left;
+	color: white;
+	background-color: #7aac47;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.date{
+	font-weight: 200;
+	font-size: 0.5em;
+	color: #53752F;
+	vertical-align: middle;
+}
+
+.musicSummary{
+	width: 46%;
+	display: inline-block;
+	vertical-align: top;
+}
+.musicSummary p{
+	font-size: 16px;
+}
+
+.bigPlayList{
+	width: 50%;
+	margin: 1em 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.playlist{
+	width: 47%;
+	display: inline-block;
+	padding: 1%;
+}
+
+.playlist iframe, .bigPlayList iframe{
+	width: 100%;
+}
+
