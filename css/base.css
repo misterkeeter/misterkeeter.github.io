@@ -192,3 +192,13 @@ h1{
 	width: 100%;
 }
 
+#logo *:hover{
+	opacity: 1;
+}
+
+a img:hover{
+	opacity: 0.25;
+}
+
+
+
