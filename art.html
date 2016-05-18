@@ -7,8 +7,30 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/base.css">
   <script src="js/google.js"></script>
+  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $( document ).ready(function() {
+    $(".biggie").hide();
+    $(".biggie").click(function(e){
+      $(".biggie").hide();
+      $("#bigImage").html("");
+    });
+    $('.col img').click(function(e){
+      target = $(e.target).attr('src');
+      $(".biggie").show();
+      console.log(target);
+      myImage = "<img src=\""+target+"\">";
+      $("#bigImage").append(myImage);
+    });
+  });
+  </script>
 </head>
 <body>
+  <div class="biggie" >
+    <div id='bigImage'>
+      
+    </div>
+  </div>
   <div class="wrapper">
     <header>
       <div class="social">
