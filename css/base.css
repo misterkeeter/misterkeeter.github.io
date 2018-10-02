@@ -46,12 +46,26 @@ body{
     padding: 1em;
 }
 
+#sidenav{
+	width: 30%;
+	display: inline-block;
+}
+#thumbs{
+	width: 69%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#thumbs section{
+	text-align: right;
+}
+
 header{
 
 }
 
 .col, .col3{
-	padding: 2% 1%;
+	padding: 0% 1%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -180,6 +194,7 @@ p{
 h1{
 	padding: 0.25em;
 	margin: 0; 
+	margin-bottom: 0.25em;
 	text-align: left;
 	color: white;
 	background-color: #7aac47;

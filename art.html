@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,10 +11,13 @@
   <script type="text/javascript">
   $( document ).ready(function() {
     $(".biggie").hide();
+    $("section").hide();
+    
     $(".biggie").click(function(e){
       $(".biggie").hide();
       $("#bigImage").html("");
     });
+    
     $('.col img').click(function(e){
       target = $(e.target).attr('src');
       $(".biggie").show();
@@ -22,6 +25,14 @@
       myImage = "<img src=\""+target+"\">";
       $("#bigImage").append(myImage);
     });
+
+    $('h1').click(function(e){
+      $("section").hide();
+      thisID = $(e.target).attr('id');
+      $("#"+thisID+"-section").show();
+    });
+
+
   });
   </script>
 </head>
@@ -46,49 +57,59 @@
         <a href="work.html">Work</a>
       </nav>
     </header>
-    <div id="art">
-      <h1>Drawings</h1>
-      <div class="col">
-        <img src="img/drawings/cb-handset_6776628263_o.jpg">
-        <img src="img/drawings/dd-02-color_20290989686_o.png">
-        <img src="img/drawings/dd-04_20129199990_o.png">
-      </div>
-      <div class="col">
-        <img src="img/drawings/dd-03-color_20308815872_o.png">
-        <img src="img/drawings/dd-08combocolor_19696241003_o.png">
-        <img src="img/drawings/tape_6776628659_o.jpg">
-      </div>
-      <div class="col">
-        <img src="img/drawings/dd-05_19696241273_o.png">
-        <img src="img/drawings/video_6776880593_o.jpg">
-      </div>
-      <div class="col">
-        <img src="img/drawings/headphones_6776628419_o.jpg">
-        <img src="img/drawings/dd-06_20130601609_o.png">
-        <img src="img/drawings/mike_6776880349_o.jpg">
-      </div>
-      <h1>Prints</h1>
-      <div class="col">
-        <img src="img/prints/TheSkies.jpg">
-        <img src="img/prints/The-Tower.jpg">
-      </div>
-      <div class="col">
-        <img src="img/prints/i-never-start-triptych-part-1.jpg">
-        <img src="img/prints/noise-diptych-part-1.jpg">
-        <img src="img/prints/tv-intaglio.jpg">
-      </div>
-      <div class="col">
-        <img src="img/prints/i-never-start-triptych-part-2.jpg">
-        <img src="img/prints/noise-diptych-part-2.jpg">
-        <img src="img/prints/fridge-intaglio.jpg">
-      </div>
-
-      <div class="col">
-        <img src="img/prints/i-never-start-triptych-part-3.jpg">
-        <img src="img/prints/untitled-trade-print.jpg">
-        <img src="img/prints/untitled-intaglio.jpg">
-      </div>
+  
+  <div id="art">
+    <div id='sidenav'>
+      <h1 id="drawings">Drawings</h1>
+      <h1 id="prints">Prints</h1>
+    </div>
+  
+    <div id="thumbs">
+      <section id="drawings-section">
+        <div class="col">
+          <img src="img/drawings/cb-handset_6776628263_o.jpg">
+          <img src="img/drawings/dd-02-color_20290989686_o.png">
+          <img src="img/drawings/dd-04_20129199990_o.png">
+        </div>
+        <div class="col">
+          <img src="img/drawings/dd-03-color_20308815872_o.png">
+          <img src="img/drawings/dd-08combocolor_19696241003_o.png">
+          <img src="img/drawings/tape_6776628659_o.jpg">
+        </div>
+        <div class="col">
+          <img src="img/drawings/dd-05_19696241273_o.png">
+          <img src="img/drawings/video_6776880593_o.jpg">
+        </div>
+        <div class="col">
+          <img src="img/drawings/headphones_6776628419_o.jpg">
+          <img src="img/drawings/dd-06_20130601609_o.png">
+          <img src="img/drawings/mike_6776880349_o.jpg">
+        </div>
+      </section>
+       
+      <section id="prints-section">
+        <div class="col">
+          <img src="img/prints/TheSkies.jpg">
+          <img src="img/prints/The-Tower.jpg">
+        </div>
+        <div class="col">
+          <img src="img/prints/i-never-start-triptych-part-1.jpg">
+          <img src="img/prints/noise-diptych-part-1.jpg">
+          <img src="img/prints/tv-intaglio.jpg">
+        </div>
+        <div class="col">
+          <img src="img/prints/i-never-start-triptych-part-2.jpg">
+          <img src="img/prints/noise-diptych-part-2.jpg">
+          <img src="img/prints/fridge-intaglio.jpg">
+        </div>
+        <div class="col">
+          <img src="img/prints/i-never-start-triptych-part-3.jpg">
+          <img src="img/prints/untitled-trade-print.jpg">
+          <img src="img/prints/untitled-intaglio.jpg">
+        </div>
+      </section>  
     </div>
   </div>
 </body>
 </html>
+ -->
